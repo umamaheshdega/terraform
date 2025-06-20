@@ -1,6 +1,6 @@
 resource "aws_instance" "terraform_demo" {
   ami                    = "ami-09c813fb71547fc4f" # This is our devops-practice AMI ID
-  vpc_security_group_ids = [aws_security_group.allow_tls.id]
+  vpc_security_group_ids = [aws_security_group.allow_sg.id]
   instance_type          = "t3.micro"
   tags = {
     Name    = "terraform_devops"
@@ -9,7 +9,7 @@ resource "aws_instance" "terraform_demo" {
 }
 
 resource "aws_security_group" "allow_sg" {
-  name        = "allow_tls_1"
+  name        = "allow_sg_1"
   description = "Allow TLS inbound traffic and all outbound traffic"
 
   ingress {
