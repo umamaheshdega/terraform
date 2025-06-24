@@ -1,8 +1,8 @@
-variable "ami_id" {
-  type        = string
-  default     = prod
-  description = "This is RHEL9 AMI ID"
-}
+# variable "ami_id" {
+#   type        = string
+#   default     = prod
+#   description = "This is RHEL9 AMI ID"
+# }
 
 variable "environment" {
     default = prod
