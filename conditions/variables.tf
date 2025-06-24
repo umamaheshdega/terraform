@@ -1,11 +1,11 @@
 variable "ami_id" {
   type        = string
-  default     = "ami-09c813fb71547fc4f"
+  default     = prod
   description = "This is RHEL9 AMI ID"
 }
 
 variable "environment" {
-    default = "prod"
+    default = prod
 }
 
 variable "instance_type" {
