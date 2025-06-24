@@ -1,16 +1,16 @@
-variable "ami_id" {
-  type        = string
-  default     = "ami-09c813fb71547fc4f"
-  description = "This is RHEL9 AMI ID"
-}
+# variable "ami_id" {
+#   type        = string
+#   default     = "ami-09c813fb71547fc4f"
+#   description = "This is RHEL9 AMI ID"
+# }
 
 variable "environment" {
     default = prod
 }
 
-variable "instance_type" {
-    default = "t3.micro"
-}
+# variable "instance_type" {
+#     default = "t3.micro"
+# }
 
 variable "ec2_tags" {
     type = map
