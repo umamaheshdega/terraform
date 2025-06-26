@@ -1,16 +1,17 @@
 variable "instances" {
-    type = map
-    default = {
-        mysql = "t3.small"
-        backend = "t3.micro"
-        frontend = "t3.micro"
-    }
+  type = map
+  default = {
+    MySQL = "t2.micro"
+    backend = "t2.small"
+    frontend = "t2.large"
+
+  }
 }
 
 variable "domain_name" {
-    default = "daws82s.online"
+  default = "ansible.mahesh.com"
 }
 
 variable "zone_id" {
-    default = "Z021448929NMXW4P65UQE"
+  default = "Z0763118WV63KYFJD7RF"
 }

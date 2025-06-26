@@ -1,4 +1,3 @@
-/* output "ec2_info" {
+output "mahesh" {
   value       = aws_instance.expense
 }
- */

@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "testing-bucket-security-remote"
-    key    = "expense-backend-infra" # you should have unique keys with in the bucket, same key should not be used in other repos or tf projects
+    bucket = "devops-pratice-82s"
+    key    = "expense-devops-pratice" # you should have unique keys with in the bucket, same key should not be used in other repos or tf projects
     region = "us-east-1"
-    dynamodb_table = "82s-state-locking"
+    dynamodb_table = "devops-pratice-state-lock"
   }
 }
 
@@ -18,3 +18,4 @@ provider "aws" {
   # Configuration options
   region = "us-east-1"
 }
+

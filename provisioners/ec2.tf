@@ -25,6 +25,7 @@ resource "aws_instance" "this" {
     ]
   }
 
+
   provisioner "remote-exec" {
     when = destroy
     inline = [

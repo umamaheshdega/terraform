@@ -1,7 +1,7 @@
 resource "aws_instance" "mahesh" {
-  ami                    = var.ami_id = "prod"? "ami-09c813fb71547fc4f": "ami-07041441b708acbd6"
+  ami                    = var.environment == "prod"? "ami-09c813fb71547fc4f": "ami-07041441b708acbd6"
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
-  instance_type          = var.environment = "prod"? "t2.small": "t2.micro"
+  instance_type          = var.environment == "prod"? "t2.micro": "t2.small"
   tags = var.ec2_tags
 }
 

@@ -28,3 +28,9 @@ output  "ami_id" {
 output "default_vpc_id" {
     value = data.aws_vpc.default.id
 }
+output "aws_instance_types" {
+    value = local.instance_type
+}
+output "vpc_group_id" {
+    value = local.vpc_ids
+}

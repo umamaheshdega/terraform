@@ -1,6 +1,6 @@
 resource "aws_instance" "this" {
   ami                    = local.ami_id
-  vpc_security_group_ids = [aws_security_group.allow_tls.id]
+  vpc_security_group_ids = local.vpc_ids
   #instance_type          = var.instance_type
   instance_type = local.instance_type
   tags = {
@@ -31,4 +31,8 @@ resource "aws_security_group" "allow_tls" {
   tags = {
     Name = "allow_tls"
   }
+}
+
+output "ec2_info" {
+  value = aws_instance.this.vpc_security_group_ids
 }

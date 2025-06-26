@@ -30,3 +30,21 @@ resource "aws_security_group" "allow_tls" {
     Name = "allow_tls"
   }
 }
+
+variable "bucket_type" {
+  default = "devops-pratice-82s"
+}
+
+# variable "region" {
+#   default = "us-east-1"
+# }
+
+# locals {
+#   bucket_name = "devops-pratice-82s"
+#   region = "us-east-1"
+
+# }
+
+output "ec2_bucket" {
+  value = var.bucket_type
+}

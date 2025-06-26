@@ -5,12 +5,12 @@
 # }
 
 variable "environment" {
-    default = prod
+    default = "dev"
 }
 
-# variable "instance_type" {
+# /* variable "instance_type" {
 #     default = "t3.micro"
-# }
+# } */
 
 variable "ec2_tags" {
     type = map
