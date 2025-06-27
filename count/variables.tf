@@ -1,5 +1,11 @@
 variable "instances" {
-    default = ["mysql", "backend", "frontend"]
+  type = map
+    default = {
+    MySQL = "t2.micro"
+    backend = "t2.small"
+    frontend = "t2.large"
+  
+  }
 }
 
 variable "zone_id" {
@@ -13,7 +19,7 @@ variable "domain_name" {
 variable "common_tags" {
     type = map
     default = {
-        Project = "expense"
-        Environment = "dev"
+        Project = "mahesh"
+        Environment = "prod"
     }
 }
