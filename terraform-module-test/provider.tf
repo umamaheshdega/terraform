@@ -8,9 +8,9 @@ terraform {
 
   backend "s3" {
     bucket         = "devops-pratice-82s"
-    key            = "vpc-infra-test" # you should have unique keys with in the bucket, same key should not be used in other repos or tf projects
+    key            = "vpc-devops-test" # you should have unique keys with in the bucket, same key should not be used in other repos or tf projects
     region         = "us-east-1"
-    dynamodb_table = "devops-infra-state-lock"
+    dynamodb_table = "devops-pratice-state-lock"
   }
 }
 
