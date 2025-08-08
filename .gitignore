@@ -14,10 +14,14 @@ crash.*.log
 # control as they are data points which are potentially sensitive and subject 
 # to change depending on the environment.
 <<<<<<< HEAD
+<<<<<<< HEAD
 # *.tfvars
 =======
 *.tfvars
 >>>>>>> 30aea76 (count)
+=======
+*.tfvars
+>>>>>>> e2741ca (for_each)
 *.tfvars.json
 
 # Ignore override files as they are usually used to override resources locally and so
@@ -38,10 +42,8 @@ override.tf.json
 
 # Ignore CLI configuration files
 .terraformrc
-<<<<<<< HEAD
 terraform.rc
-=======
-terraform.rc
+
 
 # Ignore Terraform lock and state files
 .terraform/
@@ -59,4 +61,9 @@ crash.log
 *.tfstate
 *.tfstate.backup
 
+<<<<<<< HEAD
 >>>>>>> 30aea76 (count)
+=======
+
+
+>>>>>>> e2741ca (for_each)
